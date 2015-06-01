@@ -1,0 +1,17 @@
+void enumGraph(FILE*desc, Graph** tabG){
+  char document[1000];
+  strcpy(document, "\\begin{tabular}{ccc}\n");
+  fprintf(desc, "%s", document);
+  int i = 0;
+  while(tabG[i] != NULL){
+    displayGraph(desc, tabG[i]);
+    i++;
+    if(i%3 == 0)
+      strcpy(document, "\\\\\n");
+    else
+      strcpy(document, "&\n");
+    fprintf(desc,"%s", document);
+  }
+  strcpy(document, "\\end{tabular}\n");
+  fprintf(desc, "%s", document);
+}

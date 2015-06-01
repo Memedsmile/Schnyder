@@ -1,0 +1,66 @@
+\hypertarget{struct_node}{}\section{Node Struct Reference}
+\label{struct_node}\index{Node@{Node}}
+
+
+Objet Noeud/\+Arbre.  
+
+
+
+
+{\ttfamily \#include $<$node.\+h$>$}
+
+
+
+Collaboration diagram for Node\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{struct_node_af749ccd9c242573390416d80accd7b39}{id}
+\item 
+int \hyperlink{struct_node_a86ce04d133292adc1adeed43958d5893}{nbsom}
+\item 
+\hyperlink{struct_node}{Node} $\ast$ \hyperlink{struct_node_ae311e29d2a6e2676fbb6d46f243cad7b}{lc}
+\item 
+\hyperlink{struct_node}{Node} $\ast$ \hyperlink{struct_node_adb6c1c6fd585f28f8e933f88708f40a0}{rc}
+\item 
+\hyperlink{struct_node}{Node} $\ast$ \hyperlink{struct_node_a15358e51f4bc699859aef344484ae4a8}{parent}
+\item 
+int \hyperlink{struct_node_acb5ba97551079e0b072c62c21d784ac5}{depth}
+\item 
+\hyperlink{struct_edge}{Edge} $\ast$ \hyperlink{struct_node_a33abcf13b3a22a82ead9b91fed7b2221}{link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Objet Noeud/\+Arbre. 
+
+\hyperlink{struct_node}{Node} est un objet représentant un arbre binaire recursivement. Il contient les proprietés d\textquotesingle{}un noeud de l\textquotesingle{}arbre, ainsi que les pointeurs vers les noeuds fils et parent. 
+
+\subsection{Field Documentation}
+\hypertarget{struct_node_acb5ba97551079e0b072c62c21d784ac5}{}\index{Node@{Node}!depth@{depth}}
+\index{depth@{depth}!Node@{Node}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int depth}\label{struct_node_acb5ba97551079e0b072c62c21d784ac5}
+Profondeur du noeud \hypertarget{struct_node_af749ccd9c242573390416d80accd7b39}{}\index{Node@{Node}!id@{id}}
+\index{id@{id}!Node@{Node}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}char id}\label{struct_node_af749ccd9c242573390416d80accd7b39}
+Nom du noeud (non unique) \hypertarget{struct_node_ae311e29d2a6e2676fbb6d46f243cad7b}{}\index{Node@{Node}!lc@{lc}}
+\index{lc@{lc}!Node@{Node}}
+\subsubsection[{lc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ lc}\label{struct_node_ae311e29d2a6e2676fbb6d46f243cad7b}
+Sous arbre fils gauche \hypertarget{struct_node_a33abcf13b3a22a82ead9b91fed7b2221}{}\index{Node@{Node}!link@{link}}
+\index{link@{link}!Node@{Node}}
+\subsubsection[{link}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Edge}$\ast$ link}\label{struct_node_a33abcf13b3a22a82ead9b91fed7b2221}
+Arète du graphe liée au noeud \hypertarget{struct_node_a86ce04d133292adc1adeed43958d5893}{}\index{Node@{Node}!nbsom@{nbsom}}
+\index{nbsom@{nbsom}!Node@{Node}}
+\subsubsection[{nbsom}]{\setlength{\rightskip}{0pt plus 5cm}int nbsom}\label{struct_node_a86ce04d133292adc1adeed43958d5893}
+Nombre de noeuds dans le sous arbre \hypertarget{struct_node_a15358e51f4bc699859aef344484ae4a8}{}\index{Node@{Node}!parent@{parent}}
+\index{parent@{parent}!Node@{Node}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ parent}\label{struct_node_a15358e51f4bc699859aef344484ae4a8}
+Noeud père \hypertarget{struct_node_adb6c1c6fd585f28f8e933f88708f40a0}{}\index{Node@{Node}!rc@{rc}}
+\index{rc@{rc}!Node@{Node}}
+\subsubsection[{rc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ rc}\label{struct_node_adb6c1c6fd585f28f8e933f88708f40a0}
+Sous arbre fils droit 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+node.\+h\end{DoxyCompactItemize}

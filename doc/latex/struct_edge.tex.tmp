@@ -1,0 +1,61 @@
+\hypertarget{struct_edge}{}\section{Edge Struct Reference}
+\label{struct_edge}\index{Edge@{Edge}}
+
+
+Objet Arête/\+Arc.  
+
+
+
+
+{\ttfamily \#include $<$edge.\+h$>$}
+
+
+
+Collaboration diagram for Edge\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_edge_af17b5de4074fb8cec910e0949474a81b}{origin}
+\item 
+int \hyperlink{struct_edge_ae5163ff230abd4115d86194ad89467b5}{dest}
+\item 
+int \hyperlink{struct_edge_aae3213d24c3650d6836b74cfef8b9074}{couleur}
+\item 
+int \hyperlink{struct_edge_a4bd9468ce098e077945efc317fadeafd}{oriente}
+\item 
+\hyperlink{struct_face}{Face} $\ast$$\ast$ \hyperlink{struct_edge_aadfb4851647547eb2cf7c5756ac1a13e}{faces}
+\item 
+\hyperlink{struct_edge}{Edge} $\ast$ \hyperlink{struct_edge_af879e2bc82e837c370cb0286358109b4}{copy}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Objet Arête/\+Arc. 
+
+\hyperlink{struct_edge}{Edge} est un objet représentant une arête ou un arc d\textquotesingle{}un graphe. Il contient les proprietés d\textquotesingle{}une arête, ainsi que les pointeurs vers les faces adjacentes à l\textquotesingle{}arête et l\textquotesingle{}arête copie si c\textquotesingle{}est une arête externe 
+
+\subsection{Field Documentation}
+\hypertarget{struct_edge_af879e2bc82e837c370cb0286358109b4}{}\index{Edge@{Edge}!copy@{copy}}
+\index{copy@{copy}!Edge@{Edge}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Edge}$\ast$ copy}\label{struct_edge_af879e2bc82e837c370cb0286358109b4}
+Arête copie si c\textquotesingle{}est une arête externe et N\+U\+L\+L sinon \hypertarget{struct_edge_aae3213d24c3650d6836b74cfef8b9074}{}\index{Edge@{Edge}!couleur@{couleur}}
+\index{couleur@{couleur}!Edge@{Edge}}
+\subsubsection[{couleur}]{\setlength{\rightskip}{0pt plus 5cm}int couleur}\label{struct_edge_aae3213d24c3650d6836b74cfef8b9074}
+0 pour rouge, 1 pour bleu, 2 pour vert \hypertarget{struct_edge_ae5163ff230abd4115d86194ad89467b5}{}\index{Edge@{Edge}!dest@{dest}}
+\index{dest@{dest}!Edge@{Edge}}
+\subsubsection[{dest}]{\setlength{\rightskip}{0pt plus 5cm}int dest}\label{struct_edge_ae5163ff230abd4115d86194ad89467b5}
+Clé du sommet destination de l\textquotesingle{}arête \hypertarget{struct_edge_aadfb4851647547eb2cf7c5756ac1a13e}{}\index{Edge@{Edge}!faces@{faces}}
+\index{faces@{faces}!Edge@{Edge}}
+\subsubsection[{faces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Face}$\ast$$\ast$ faces}\label{struct_edge_aadfb4851647547eb2cf7c5756ac1a13e}
+Tableau des 2 faces adjacentes à l\textquotesingle{}arête \hypertarget{struct_edge_a4bd9468ce098e077945efc317fadeafd}{}\index{Edge@{Edge}!oriente@{oriente}}
+\index{oriente@{oriente}!Edge@{Edge}}
+\subsubsection[{oriente}]{\setlength{\rightskip}{0pt plus 5cm}int oriente}\label{struct_edge_a4bd9468ce098e077945efc317fadeafd}
+booleen = 1 si l\textquotesingle{}arête est orienté, 0 sinon \hypertarget{struct_edge_af17b5de4074fb8cec910e0949474a81b}{}\index{Edge@{Edge}!origin@{origin}}
+\index{origin@{origin}!Edge@{Edge}}
+\subsubsection[{origin}]{\setlength{\rightskip}{0pt plus 5cm}int origin}\label{struct_edge_af17b5de4074fb8cec910e0949474a81b}
+Clé du sommet origine de l\textquotesingle{}arête 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+edge.\+h\end{DoxyCompactItemize}
